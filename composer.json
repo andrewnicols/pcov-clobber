@@ -1,8 +1,10 @@
 {
     "name": "pcov/clobber",
     "require": {
-	"ext-pcov": "^1.0",
-        "nikic/php-parser": "^4.2"
+	"nikic/php-parser": "^4.2"
+    },
+    "suggest": {
+        "ext-pcov": "^1.0"
     },
     "autoload": {
         "psr-4": {

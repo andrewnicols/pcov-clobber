@@ -71,6 +71,10 @@ if ($config["path"]) {
 	}
 }
 
+if (!extension_loaded('pcov')) {
+    usage("The pcov extension does not seem to be available");
+}
+
 if (class_exists(PHPUnit_Runner_Version::class) &&
     (\version_compare(PHPUnit_Runner_Version::id(), "5", ">="))) {
     $config["version"] = 5;
